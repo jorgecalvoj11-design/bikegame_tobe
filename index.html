@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dirt Road Grammar Race</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<audio id="raceAudio" src="./assets/race.mp3" autoplay loop></audio>
+<audio id="bgMusic" src="./assets/bgmusic.mp3" autoplay loop></audio>
+
+  <h1>🚴 Dirt Road Grammar Race 🌄</h1>
+
+  
+  
+  <div id="road">
+  <div class="bikebounce" id="bike">
+    <img  src="./assets/biker.png" alt="Biker" id="bike-img">
+  </div>
+</div>
+
+<br>
+
+<div class="grid">
+  <div class="question-box" id="quiz-box">
+    <h2 id="question">Loading question...</h2>
+    <div class="answers" id="answers"></div>
+  </div>
+
+  <div class="score-timer">
+    <span id="score">Score: 0</span> &nbsp;&nbsp;|&nbsp;&nbsp;    <span id="timer">Time: 0s</span>
+  </div>
+</div>
+
+  <!-- Sound Effects -->
+  <audio id="correctSound" src="./assets/correct.wav">
+  </audio>
+  <audio id="wrongSound" src="./assets/wrong.wav">
+  </audio>
+  <audio id="finishSound" src="./assets/finish.wav">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
